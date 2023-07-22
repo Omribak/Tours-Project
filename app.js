@@ -10,6 +10,7 @@ const reviewRouter = require('./routes/reviewRoutes');
 const bookingRouter = require('./routes/bookingRoutes');
 const helmet = require('helmet');
 const mongoSanitize = require('express-mongo-sanitize');
+const compression = require('compression');
 const xss = require('xss-clean');
 const hpp = require('hpp');
 const cookieParser = require('cookie-parser');
@@ -105,6 +106,8 @@ app.use(
     ],
   })
 );
+
+app.use(compression());
 
 //Test middleware
 app.use((req, res, next) => {
