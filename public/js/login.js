@@ -24,6 +24,8 @@ export const login = async (email, password) => {
   }
 };
 
+//Second Commit
+
 export const logout = async () => {
   console.log('Inside logout function');
   try {
