@@ -36,7 +36,10 @@ app.use(
 
       fontSrc: ["'self'", 'https:', 'data:'],
 
-      scriptSrc: ["'self'", 'https://*.cloudflare.com'],
+      scriptSrc: [
+        "'self'",
+        'https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js',
+      ],
 
       scriptSrc: ["'self'", 'https://*.stripe.com'],
 
